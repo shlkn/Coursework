@@ -1,35 +1,7 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS 
-#include <iostream> 
-#include <math.h> 
-#include <string> 
-#include <windows.h>
-#include "glut.h"
-#include <ctime>
-#include "file_in_out.cpp"
-typedef struct {
-	int dim; //dimension 
-	float* coord; //coordinates 
-} vector;
 
-using namespace std;
-void f_data_in(vector a, vector b);
-void data_in(vector a, vector b);
-void f_data_out_1(vector a, vector b, float res);
-void f_data_out(vector a, vector b, vector c);
-int enter_menu();
-int  calc(vector a, vector b, vector c);
-void reshape(int w, int h);
-void displayText(float x, float y, int r, int g, int b, char string);
-void display();
-void ScreenShot(int W, int H);
+#include "file_in_out.h"
 
-float scl_multiple_vectors(vector a, vector b);
-vector cnst_multiple_vecror(vector a, int x);
-vector vct_multiple_vectors(vector a, vector b);
-float mxt_multiple_vectors(vector a, vector b, vector c);
-vector substract_vectors(vector a, vector b);
-vector add_vectors(vector a, vector b);
-float** direct_mult(vector a, vector b);
 float* vct_a, * vct_b, * vct_c;
 int main(int argc, char* argv[])
 {
@@ -574,10 +546,11 @@ void display()
 	glColor3f(1.0, 0.0, 0.0);
 	glVertex2i(vct_b[0], vct_b[1]);
 	glEnd();
-	ScreenShot(1500, 840);
+	//ScreenShot(1500, 840);
 	glutSwapBuffers();
 
 }
+/*
 void ScreenShot(int W, int H)
 {
 	const int imSize = W * H * 3;
@@ -610,6 +583,7 @@ void ScreenShot(int W, int H)
 	delete[]image;
 	fclose(F);
 }
+*/
 int  calc(vector a, vector b, vector c)
 {
 	vct_a = (float*)malloc(sizeof(float) * 2);

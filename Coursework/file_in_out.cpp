@@ -1,5 +1,7 @@
-#include <fstream>
-#include "Coursework.cpp"
+#ifndef FILE_IN_OUT_H
+
+#include "file_in_out.h"
+
 using namespace std;
 void f_data_in(vector a, vector b) //ввод данных из файла
 {
@@ -18,3 +20,5 @@ void f_data_in(vector a, vector b) //ввод данных из файла
 	}
 	cout << endl;
 }
+
+#endif // !FILE_IN_OUT_H
