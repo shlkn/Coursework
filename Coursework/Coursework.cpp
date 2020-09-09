@@ -10,7 +10,6 @@ typedef struct {
 	int dim; //dimension 
 	float* coord; //coordinates 
 } vector;
-
 using namespace std;
 void f_data_in(vector a, vector b);
 void data_in(vector a, vector b);
