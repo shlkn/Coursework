@@ -19,6 +19,7 @@ void f_data_in(vector a, vector b) //ввод данных из файла
 	}
 	cout << endl;
 }
+
 void f_data_out_1(vector a, vector b, float res)
 {
 	int i;
@@ -39,6 +40,7 @@ void f_data_out_1(vector a, vector b, float res)
 	}
 	fclose(out);
 }
+
 void f_data_out(vector a, vector b, vector c)
 {
 	int i;
@@ -63,6 +65,7 @@ void f_data_out(vector a, vector b, vector c)
 	}
 	fclose(out);
 }
+
 void f_data_in_vector_a(vector a)
 {
 	ifstream input("in.txt");
@@ -74,6 +77,7 @@ void f_data_in_vector_a(vector a)
 	}
 	cout << endl;
 }
+
 void f_data_out_res_vct(vector a, vector res_vct)
 {
 	FILE* out;
@@ -91,6 +95,7 @@ void f_data_out_res_vct(vector a, vector res_vct)
 	}
 	fclose(out);
 }
+
 void f_data_in_vectors(vector a, vector b, vector c)
 {
 	ifstream input("in.txt");
@@ -114,6 +119,7 @@ void f_data_in_vectors(vector a, vector b, vector c)
 	}
 	cout << endl;
 }
+
 void f_data_out_mxt_mul(vector a, vector b, vector c, float res)
 {
 	int i;
@@ -139,6 +145,7 @@ void f_data_out_mxt_mul(vector a, vector b, vector c, float res)
 	}
 	fclose(out);
 }
+
 void f_data_out_drct_mul(vector a, vector b, float** res)
 {
 	FILE* out;

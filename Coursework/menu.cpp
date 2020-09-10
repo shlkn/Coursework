@@ -1,10 +1,10 @@
 #include "menu.h"
 void menu(int argc, char* argv[])
 {
-	int N, x, i, flg = 0;
+	int N, x, i;
+	bool flg = 0;
 	cout << "enter count of coordinates\n";
 	cin >> N;
-
 	vector vector_a;
 	vector vector_b;
 	vector vector_c;
@@ -20,7 +20,7 @@ void menu(int argc, char* argv[])
 	float** arr;
 	while (true)
 	{
-		cout << "what do you want multiply(1) ora add(2) vectors?\n";
+		cout << "what do you want multiply(1) or add(2) vectors?\n";
 		cin >> chs;
 		if (chs == 1)
 		{
@@ -188,7 +188,7 @@ void menu(int argc, char* argv[])
 		}
 		cout << "please try again\n";
 	}
-	if (flg != 0 && N == 3)
+	if (flg && N == 3)
 		graphic_init(argc, argv);
 }
 int input_menu()
