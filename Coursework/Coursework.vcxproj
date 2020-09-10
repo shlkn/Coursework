@@ -139,8 +139,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="calculations.cpp" />
     <ClCompile Include="Coursework.cpp" />
     <ClCompile Include="file_in_out.cpp" />
+    <ClCompile Include="graphics.cpp" />
+    <ClCompile Include="manual_enter.cpp" />
+    <ClCompile Include="menu.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Calculations.h" />
+    <ClInclude Include="graphics.h" />
+    <ClInclude Include="manual_enter.h" />
+    <ClInclude Include="menu.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
