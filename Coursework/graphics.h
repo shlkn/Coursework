@@ -3,6 +3,7 @@
 #include <windows.h>
 #include "glut.h"
 #include <fstream>
+
 void graphic_init(int argc, char* argv[]);
 void ScreenShot(int W, int H);
 void display();

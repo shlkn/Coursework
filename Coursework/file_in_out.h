@@ -1,5 +1,6 @@
 #include "Coursework.h"
 #include <fstream>
+
 void f_data_in(vector a, vector b);
 void f_data_out_1(vector a, vector b, float res);
 void f_data_out(vector a, vector b, vector c);
